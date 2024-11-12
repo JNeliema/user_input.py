@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="tmapp.jpg" alt="Logo" />
+            <h1>Telemedicine App</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+            <!-- Heading and Paragraph -->
+            <section id="home">
+                <h2>Introduction</h2>
+                <p>This is a telemedicine application designed to provide remote healthcare services.</p>
+            </section>
+            <br>
+
+            <!-- Registration Form -->
+            <section id="services">
+                <h2>Registration Form</h2>
+                <form action="/submit" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <input type="submit" value="Register">
+                </form>
+            </section>
+
+            <!-- Table displaying common user information -->
+            <section id="about">
+                <br>
+                <h2>User Information</h2>
+                <table border="1">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                    </tr>
+                    <tr>
+                        <td>Joan Nelima</td>
+                        <td>joan.nelima@example.com</td>
+                        <td>+1234567890</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Wangari</td>
+                        <td>jane.wangari@example.com</td>
+                        <td>+0987654321</td>
+                    </tr>
+                </table>
+                <br>
+            </section>
+            <!-- Image -->
+            <section id="contact">
+                <h2>Sample Image</h2>
+                <img src="sample.jpg" alt="Sample Image" width="400" height="400px">
+
+                <!-- External Link -->
+                <h2>External Link</h2>
+                <p>Visit <a href="https://google.com" target="_blank">Google for more information.</a></p>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside>
+            <h2>Additional Links</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+            <br>
+            <h2>Search</h2>
+            <input type="text" placeholder="Search...">
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Telemedicine App. All rights reserved.</p>
+        <p>Follow us on <a href="#">Social Media</a></p>
+        <p>Contact: <a href="mailto:contact@telemedicineapp.com">contact@telemedicineapp.com</a></p>
+    </footer>
+</body>
+</html>
